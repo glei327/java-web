@@ -1,0 +1,11 @@
+generalconfig:
+  login:
+    includeUrls: #登陆拦截路径
+      - /**
+    excludeUrls: #不过登陆拦截的路径
+      - /error
+  log:
+      includeUrls: #日志拦截路径
+        - /**
+      excludeUrls: #不过日志拦截的路径
+        - /error

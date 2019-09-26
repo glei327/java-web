@@ -1,0 +1,37 @@
+package com.gl.web.controller;
+
+import com.gl.domain.Order;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * Package: com.gl.web.controller
+ * Title: OrderController
+ * Description: (用一句话描述该文件做什么)
+ * Author: gaolei10
+ * Date: 2019/9/25 20:35
+ * version: v1.0
+ */
+@RequestMapping("/sys/order")
+@RestController
+@Slf4j
+public class OrderController {
+
+    @RequestMapping("query")
+    @ResponseBody
+    public Map<String,Object> query(){
+        Map<String,Object> result = new HashMap<String,Object>();
+        Order order = new Order();
+        result.put("success",true);
+        order.setCreated(new Date());
+        order.setId(1l);
+        result.put("data",order);
+        return result;
+    }
+}
