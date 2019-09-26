@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33a2cb1a-37ab-4619-ba62-0fcc3d3c7df3" name="Default" comment="" />
+    <list default="true" id="33a2cb1a-37ab-4619-ba62-0fcc3d3c7df3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/module-domain/target/" />
     <ignored path="$PROJECT_DIR$/module-service/target/" />
@@ -34,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/module-web/src/main/java/com/gl/controller/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
-              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#448#449#0" expanded="true" />
@@ -56,8 +58,8 @@
       <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module-web/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            <state relative-caret-position="100">
+              <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -92,6 +94,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -122,6 +132,7 @@
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -133,6 +144,16 @@
             <path>
               <item name="java-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-web" type="462c0819:PsiDirectoryNode" />
+              <item name="module-domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-web" type="462c0819:PsiDirectoryNode" />
+              <item name="module-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-web" type="b2602c69:ProjectViewProjectNode" />
@@ -244,15 +265,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569413894274</updated>
-      <workItem from="1569413895718" duration="2457000" />
+      <workItem from="1569413895718" duration="2953000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2457000" />
+    <option name="totallyTimeSpent" value="2953000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -271,11 +293,11 @@
       <window_info id="Image Layers" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32923076" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32923076" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32923076" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
       <window_info anchor="right" id="Bean Validation" />
       <window_info id="Web" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32923076" />
@@ -356,7 +378,7 @@
     <entry file="file://$PROJECT_DIR$/module-web/src/main/java/com/gl/controller/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#448#449#0" expanded="true" />
@@ -369,8 +391,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module-web/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        <state relative-caret-position="100">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
         </state>
       </provider>
     </entry>
