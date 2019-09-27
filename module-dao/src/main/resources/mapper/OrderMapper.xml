@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gl.dao.OrderDao">
+    <resultMap id="BaseResultMap" type="com.gl.domain.Order">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <id column="created" property="created" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        <trim prefix="" suffix="" suffixOverrides=",">
+            id,
+            created
+        </trim>
+    </sql>
+
+    <!-- 选择性的插入实体 -->
+    <insert id="insert" parameterType="com.gl.domain.Order" useGeneratedKeys="true" keyProperty="id">
+        insert into t_order
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            id,
+            created
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            #{id,jdbcType=BIGINT},
+            now()
+        </trim>
+    </insert>
+
+</mapper>
