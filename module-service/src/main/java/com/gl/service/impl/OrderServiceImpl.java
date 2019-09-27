@@ -33,7 +33,6 @@ public class OrderServiceImpl implements OrderService {
             order.setId(sequenceUtil.get("T_ORDER"));
         }
         Integer result = orderDao.insert(order);
-        int i = 1/0;
         return result;
     }
 }
