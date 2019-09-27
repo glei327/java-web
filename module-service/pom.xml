@@ -11,5 +11,11 @@
 
     <artifactId>module-service</artifactId>
     <packaging>jar</packaging>
-
+    <dependencies>
+        <dependency>
+            <groupId>com.gl</groupId>
+            <artifactId>module-dao</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>

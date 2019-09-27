@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--// 是Thyme leaf 命名空间，通过引入该
+// 命名空间就可以在HTML 文件中使用Thymeleaf 标签语言，用关键字“ th ” 来标注。-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Order</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>id</td>
+        <td>created</td>
+    </tr>
+    <tr>
+        <td th:text="${order.id}"></td>
+        <td th:text="${order.created}"></td>
+    </tr>
+</table>
+</body>
+</html>

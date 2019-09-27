@@ -91,10 +91,11 @@ public class InterceptorConfig extends WebMvcConfigurationSupport {
             loginInterceptorRegistration.excludePathPatterns(loginConfig.getExcludeUrls());
         }
 
-        registry.addInterceptor(getLogInterceptor()).addPathPatterns(logConfig.getIncludeUrls());
+        /*registry.addInterceptor(getLogInterceptor()).addPathPatterns(logConfig.getIncludeUrls());
         if (null != logConfig.getExcludeUrls() && logConfig.getExcludeUrls().length > 0) {
             loginInterceptorRegistration.excludePathPatterns(logConfig.getExcludeUrls());
-        }
+        }*/
+        registry.addInterceptor(getLogInterceptor()).addPathPatterns("/**");
 
         super.addInterceptors(registry);
     }

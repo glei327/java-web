@@ -11,12 +11,12 @@ public class LogConfig {
     /**
      * 日志拦截URL
      */
-    private String[] includeUrls;
+//    private String[] includeUrls;
 
     /**
      * 不进行日志拦截的URL
      */
-    private String[] excludeUrls;
+//    private String[] excludeUrls;
 
 
 }
