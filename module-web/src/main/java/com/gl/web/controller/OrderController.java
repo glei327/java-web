@@ -28,6 +28,7 @@ public class OrderController {
     @RequestMapping("queryData")
     @ResponseBody
     public Map<String,Object> queryData(){
+        log.error("-----");
         Map<String,Object> result = new HashMap<String,Object>();
         Order order = new Order();
         result.put("success",true);
