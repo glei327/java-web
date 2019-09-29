@@ -29,4 +29,4 @@ logging:
   config: classpath:config/log-back.xml
 mybatis:
   mapperLocations: classpath*:mapper/*Mapper.xml
-  typeAliasesPackage: com.gl.domain
+  typeAliasesPackage: com.hmq.domain
