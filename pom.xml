@@ -32,6 +32,7 @@
         <druid.versioin>1.1.10</druid.versioin>
         <mybatis.version>2.1.0</mybatis.version>
         <mysql.version>8.0.13</mysql.version>
+        <commons-lang3.version>3.9</commons-lang3.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -59,6 +60,11 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
