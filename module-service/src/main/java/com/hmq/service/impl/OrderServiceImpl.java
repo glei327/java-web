@@ -1,6 +1,5 @@
 package com.hmq.service.impl;
 
-import com.hmq.common.util.SequenceUtil;
 import com.hmq.dao.OrderDao;
 import com.hmq.domain.Order;
 import com.hmq.service.OrderService;
@@ -23,14 +22,12 @@ public class OrderServiceImpl implements OrderService {
 
     @Resource
     private OrderDao orderDao;
-    @Resource
-    private SequenceUtil sequenceUtil;
 
     @Override
     @Transactional(propagation= Propagation.REQUIRED,readOnly=false,rollbackFor = Exception.class)
     public Integer insert(Order order) {
         if(order.getId() == null){
-            order.setId(sequenceUtil.get("T_ORDER"));
+//            order.setId(sequenceUtil.get("T_ORDER"));
         }
         Integer result = orderDao.insert(order);
         return result;

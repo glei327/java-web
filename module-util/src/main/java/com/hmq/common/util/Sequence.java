@@ -1,7 +1,10 @@
 package com.hmq.common.util;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -19,13 +22,18 @@ import java.util.Map;
  * version: v1.0
  */
 @Slf4j
+@Component
 public class Sequence {
 
+    @Value("${sequence.blockSize}")
     private int blockSize = 5;
     private long startValue = 0;
     private final static String GET_SQL = "select id from sequence_value where name = ?";
     private final static String NEW_SQL = "insert into sequence_value (id,name) values (?,?)";
     private final static String UPDATE_SQL = "update sequence_value set id = ?  where name = ? and id = ?";
+
+    @Resource
+    private DataSource dataSource;
     /**
      * 外面是同步的
      */
@@ -175,10 +183,6 @@ public class Sequence {
         }
         return startValue;
     }
-
-
-
-    private DataSource dataSource;
 
     public void setDataSource(DataSource dataSource) {
         this.dataSource = dataSource;
