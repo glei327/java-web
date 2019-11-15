@@ -16,6 +16,11 @@ public class CallRpcRetryServiceImpl implements CallRpcRetryService {
 
     private final int totalNum = 100000;
 
+    /**
+     * 1、@EnableRetry 主类开启重试
+     * 2、@Retryable @Recover 两个方法返回值必须一致
+     */
+
     @Override
     @Retryable(value = Exception.class, maxAttempts = 3, backoff = @Backoff(delay = 2000L, multiplier = 1.5))
     public int retry(int num) {
