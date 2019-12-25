@@ -1,6 +1,6 @@
 package com.hmq.service;
 
-public interface CallRpcRetryService {
+public interface SpringRetryService {
 
     int retry(int num);
 }

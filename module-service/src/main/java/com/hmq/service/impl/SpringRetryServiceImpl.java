@@ -1,8 +1,7 @@
 package com.hmq.service.impl;
 
-import com.hmq.service.CallRpcRetryService;
+import com.hmq.service.SpringRetryService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.remoting.RemoteAccessException;
 import org.springframework.retry.annotation.Backoff;
 import org.springframework.retry.annotation.Recover;
 import org.springframework.retry.annotation.Retryable;
@@ -12,7 +11,7 @@ import java.time.LocalTime;
 
 @Slf4j
 @Service
-public class CallRpcRetryServiceImpl implements CallRpcRetryService {
+public class SpringRetryServiceImpl implements SpringRetryService {
 
     private final int totalNum = 100000;
 
