@@ -60,7 +60,6 @@ public class GuavaRetryServiceImpl implements GuavaRetryService {
                 } else {
                     return true;
                 }
-
             }
         };
         //利用重试器调用请求
